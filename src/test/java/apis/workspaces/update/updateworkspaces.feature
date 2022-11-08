@@ -7,16 +7,18 @@ Feature: Update workspaces
     * url URL
     * header Content-Type = 'application/json'
     * header Accept = 'application/json'
-    * header X-API-Key = 'PMAK-6356f6297cced5288c9eb45f-34244f85443191278b31c6b60020b63a3c'
+    * header X-API-Key = API_KEY
 
   Scenario Outline: A scenario
     * def body = read('classpath:apis/workspaces/update/body.json')
+    * def schema = read('classpath:apis/workspaces/update/schema.json')
 
     Given path 'workspaces' , '<id>'
     And request body
     When method put
     Then status 200
     And match $.workspace.id == '<id>'
+    And match response == schema
 
     Examples:
     |read('update_data.json')|
