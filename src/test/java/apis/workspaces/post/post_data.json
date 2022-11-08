@@ -1,0 +1,17 @@
+[
+  {
+    "name":"Test case 1",
+    "description":"workspace de prueba 1",
+    "type":"personal"
+  },
+  {
+    "name":"Test case 2",
+    "description":"workspace de prueba 2",
+    "type":"personal"
+  },
+  {
+    "name":"Test case 3",
+    "description":"workspace de prueba 3",
+    "type":"personal"
+  }
+]
