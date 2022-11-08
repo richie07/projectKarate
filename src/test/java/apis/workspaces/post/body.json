@@ -1,0 +1,7 @@
+{
+  "workspace": {
+    "name": "#(name)",
+    "description": "#(description)",
+    "type": "personal"
+  }
+}
