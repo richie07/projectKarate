@@ -10,6 +10,7 @@ function fn() {
   }
   if (env == 'dev') {
         config.URL = "https://api.getpostman.com"
+        config.API_KEY = "xxxx-xxxx-xxxx-xxxx"
   } else if (env == 'qa') {
         config.URL = "http://localhost.com"
   }

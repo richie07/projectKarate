@@ -1,0 +1,13 @@
+{
+  "workspace": {
+    "id": '#string',
+    "name": '#string',
+    "type": '#string',
+    "description": '#string',
+    "visibility": '#string',
+    "createdBy": '#string',
+    "updatedBy": '#string',
+    "createdAt": '#string',
+    "updatedAt": '#string'
+  }
+}
