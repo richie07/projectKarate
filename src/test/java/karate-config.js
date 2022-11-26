@@ -1,6 +1,7 @@
 function fn() {
   var env = karate.env; // get system property 'karate.env'
   karate.log('karate.env system property was:', env);
+  var api_key = karate.properties['api_key']
   if (!env) {
     env = 'dev';
   }
@@ -10,7 +11,7 @@ function fn() {
   }
   if (env == 'dev') {
         config.URL = "https://api.getpostman.com"
-        config.API_KEY = "xxxx-xxxx-xxxx-xxxx"
+        config.API_KEY = api_key || "PMAK-XXXXXX-XXXXXX"
   } else if (env == 'qa') {
         config.URL = "http://localhost.com"
   }

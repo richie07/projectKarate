@@ -16,9 +16,10 @@ Para la ejecución en local:
 $ mvn clean install
 ```
 
-### Running tests in local
+### Running tests in local with threads "X" , tags @X and postman token= "PMAK-XXX"
 ```
-$ mvn test -DargLine="-Dkarate.env=dev"
+$ mvn test -Dkarate.env=dev "-Dkarate.options=--tags @regresion" --threads=3 -Dapi_key="PMAK-xxxxxxx-xxxxxx"
+
 ```
 
 ### To view the reports

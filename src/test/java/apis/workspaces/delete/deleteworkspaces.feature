@@ -31,8 +31,10 @@ Feature: API Delete Workspaces
     * def schema_1 = read('classpath:apis/workspaces/delete/schema_unhappy.json')
     Given path 'workspaces' , id
     When method delete
-    Then status 404
+    Then status 400
     And match response == schema_1
+    And match $.error.name == 'workspaceNotFoundError'
+    And match $.error.message == 'Workspace not found'
 
     Examples:
     |read('delete_data.yml')|
