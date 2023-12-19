@@ -16,9 +16,14 @@ Para la ejecución en local:
 $ mvn clean install
 ```
 
+### Conseguir Key - Postman:
+```
+ URL : https://web.postman.co/settings/me/api-keys
+```
+
 ### Running tests in local with threads "X" , tags @X and postman token= "PMAK-XXX"
 ```
-$ mvn test -Dkarate.env=dev "-Dkarate.options=--tags @regresion" --threads=3 -Dapi_key="PMAK-xxxxxxx-xxxxxx"
+mvn test -Dkarate.env=dev "-Dkarate.options=--tags @regresion" -Dthreads='3' -Dapi_key="PMAK-XXXXX-XXXXX"
 
 ```
 

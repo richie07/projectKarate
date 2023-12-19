@@ -11,7 +11,7 @@ function fn() {
   }
   if (env == 'dev') {
         config.URL = "https://api.getpostman.com"
-        config.API_KEY = api_key || "PMAK-XXXXXX-XXXXXX"
+        config.API_KEY = api_key || "PMAK-6580a2670a22302a8bd94539-32eba99ff4f62b7f7ba8e3b1dfbbab48ff"
   } else if (env == 'qa') {
         config.URL = "http://localhost.com"
   }

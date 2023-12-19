@@ -1,6 +1,6 @@
 # new feature
 # Tags: optional
-@regresion
+@update
 Feature: Update workspaces
 
   Background:
@@ -21,4 +21,4 @@ Feature: Update workspaces
     And match response == schema
 
     Examples:
-    |read('update_data.json')|
+    |read('responsePostId.json')|
