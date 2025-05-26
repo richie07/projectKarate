@@ -24,8 +24,11 @@ hs_err_pid*
 
 #Directory
 .idea/
+.DS_Store
 target/
 target
+allure-report/
+allure-results/
 
 #Files
 *.iml

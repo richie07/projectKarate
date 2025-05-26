@@ -1,4 +1,4 @@
-# Project Karate
+# Project Karate with Gatling
 Project for test concept of framework test Karate
 
 ## Getting Started
@@ -21,14 +21,26 @@ $ mvn clean install
  URL : https://web.postman.co/settings/me/api-keys
 ```
 
-### Running tests in local with threads "X" , tags @X and postman token= "PMAK-XXX"
+### Running tests KARATE in local with threads "X" , tags @X and postman token= "PMAK-XXX"
 ```
 mvn test -Dkarate.env=dev "-Dkarate.options=--tags @regresion" -Dthreads='3' -Dapi_key="PMAK-XXXXX-XXXXX"
 
 ```
 
-### To view the reports
+### To view the reports KARATE
 In case that load the test in local enviroment the results of the tests are stored in the target/karate-reports folder as karate-summary.html
+
+### Running tests GATLING
+```
+mvn clean test -P gatling
+
+```
+
+### To view the reports GATLING
+In case that load the test in local enviroment the results of the tests are stored in the target/gatling/perftest- XXXXXXX/index.html
+
+
+
 
 ## Built with
 * [Karate](https://github.com/karatelabs/karate) - The framework used for automates apis
